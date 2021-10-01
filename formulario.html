@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/stylemobile.css">
+    <title>Compra</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navegador">
+            <a class="menu" id="menu"><img src="images/menu.png" alt="Logo"></a>
+            <ul id="nav" class="menuopciones">
+                <li class="botonmenu"><a href="home.html">Home</a></li>
+                <li class="botonmenu"><a href="nosotros.html">Nosotros</a></li>
+                <li class="botonmenu"><a href="estilos.html">Estilos</a></li>
+                <li class="botonmenu"><a href="contacto.html">Contacto</a></li>
+                <li class="botonmenu"><a href="formulario.html">Comprar</a></li>
+            </ul>
+        </nav>
+
+        <div class="logo" id="logo">
+            <a href="home.html"><img src="images/chaman.png" alt="Logo"></a>
+        </div>
+
+    </header>
+    <div class="formularioCompleto">
+        <div class="titulo">
+            <h2>Formulario de compra</h2>
+        </div>
+        <form class="formulario">
+            <input placeholder="Nombre" type="text" id="inputNombre">
+            <input placeholder="Apellido" type="text" id="inputApellido">
+            <input placeholder="Email" type="text" id="inputEmail">
+            <input placeholder="Producto" type="text" id="inputProducto">
+            <input placeholder="Cantidad" type="number" id="inputCantidad">
+            <div class="botonSubmit">
+                <input id="btn-agregar" type="submit" value="Agregar">
+                <input id="btn-agregarx3" type="submit" value="Agregarx3">
+            </div>
+        </form>
+    </div>
+    <div class="estilostabla">
+        <input placeholder="Filtrar por nombre" type="text" id="filtrar">
+        <table class="anchotabla" id="tablaCompras"></table>
+        <input id="btn-anterior" type="submit" value="Anterior">
+        <input id="btn-siguiente" type="submit" value="Siguiente">
+    </div>
+
+    <footer>
+        <div>
+            <a href="https://instagram.com/cerveza_chaman?igshid=1k32pv45awc0z" target="_blank">
+                <img src="images/logoInstagram.png" alt="Logo Instagram"></a>
+            <a href="about:blank" target="_blank">
+                <img src="images/logoTW.png" alt="Logo Twitter"></a>
+            <a href="https://www.youtube.com/watch?app=desktop&v=33YiCT6APKA&feature=youtu.be" target="_blank">
+                <img src="images/logoYoutube.png" alt="Logo Youtube"></a>
+        </div>
+        <div>
+            <p>BEBER CON MODERACIÓN. PROHIBIDA SU VENTA A MENORES DE 18 AÑOS | Copyright ©Cerveza Chaman 2021.</p>
+        </div>
+    </footer>
+    <script type="text/javascript" src="js/menu.js"></script>
+    <script type="text/javascript" src="js/formulariocompra.js"></script>
+</body>
+
+</html>

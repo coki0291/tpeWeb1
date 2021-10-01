@@ -1,0 +1,286 @@
+body{
+    background-color:black;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+	margin: 0;
+}
+/*Header*/
+header{
+    display: flex;
+    justify-content:space-between;
+	background-color: rgb(37, 37, 37);
+	margin: 0%;
+}
+
+.logo a img{
+	width: 90%;
+	margin: 5%;
+}
+
+.logo, .menu img{
+	width: 25%;
+}
+
+
+/*Navegador*/
+.navegador{
+	display:flex;
+	list-style: none;
+	flex-direction: column;
+	text-decoration: none;
+	width: 80%;
+	background-color: rgb(37, 37, 37);
+	margin: 2%;
+	
+	
+}
+.navegador ul{
+	list-style-type: none;
+	justify-content: space-evenly;
+	
+}
+
+
+.botonmenu{
+	padding: 5px;
+}
+
+.botonmenu a{
+	color: white;
+	text-decoration: none;
+}
+
+.botonmenu a:hover{
+	text-decoration: underline;
+}
+
+.menuopciones{
+    display: none;
+	flex-direction: column;
+	opacity: 90%;
+    padding-inline-start: 1%;
+}
+
+.mostrar {
+    display: flex;	
+}
+
+/*Footer*/
+footer{
+    color: white;
+    text-align: center;
+}
+footer img{
+    width: 13%;
+    margin: 3%;
+    margin-top: 10%;
+}
+.footer div a img:hover{
+    width: 19.9%;
+}
+/*Home*/
+.imagenesPrincipales{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 2%;
+}
+.imagenesPrincipales img{
+    width: 40%;
+}
+.sobreNosotros{
+    background-color: rgb(37, 37, 37);
+    color: white;
+    margin-top: 2%;
+    padding: 4%;
+    text-align: center;
+}
+.sobreNosotros a{
+    text-decoration: none;
+    color: white;
+}
+figure{
+    display: flex;
+    justify-content: space-evenly;
+}
+figure img{
+    width: 19%;
+    margin: 1%;
+    border:solid rgb(37, 37, 37);
+}
+/*Nosotros*/
+.presentacion, .linkLoberia, .fechasEventos{
+    color: white;
+}
+.presentacion{
+    text-align:justify;
+    margin: 3%;
+    padding: 2%;
+}
+.linkLoberia{
+    text-decoration: none;
+}    
+.fechasEventos {
+    display: column;
+    border: gray solid;
+    align-items: center;
+}
+.fechasEventos ul li {
+    font-size: 0.8rem;
+    padding:5% 0 ;
+}
+
+.fechasEventos ul{
+    padding: 0 0 0 10%;
+}
+
+.lupulo{
+    width: 80%;
+    border: none;
+}
+/*Estilos*/
+.titulo, .estilostabla{
+    color: white;
+    text-align: center;
+}
+.estilostabla {
+    color: black;
+    background-color:rgb(214, 184, 158);
+    opacity: 90%;
+    margin:3%;
+    overflow-x:auto;
+}
+
+.anchotabla {
+   width:500px;
+   table-layout: auto;
+}
+
+td, th{
+    border: 2px solid;
+    border-color: rgb(37, 37, 37);
+    font-size: 0.8rem;   
+}
+
+.sinBorde{
+    border:none;
+}
+
+/*contacto*/
+.formularioCompleto{
+    align-items: center;
+}
+
+.formularioCompleto, .formulario, .captcha {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.formulario input, textarea, .captcha, .botonSubmit{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin:1%;
+    padding: 3%;
+}
+
+.formulario {
+    width: 60%;
+}
+
+.captcha label{
+    color: white;
+}
+
+/*Formulario compra*/
+.resaltadonegrita{
+    font-weight: bold;
+    color: red;
+    border: black;
+}
+
+.botonmenu a{
+	font-size: 1.1rem;
+}
+
+a, h2{
+    font-size: 1.3rem;
+}
+
+p{
+    font-size: 0.8rem;
+}
+
+.ocultarFila, .ocultarColumna{
+    display:none;
+}
+
+
+
+/*Para pantallas superiores a 480px*/
+@media only screen and (min-width: 480px) {
+
+	.logo a img{
+		width: 60%;
+	}
+
+	.logo{
+		width: 13%;
+		margin-top: 1%;
+		margin-left: 1%;
+	}
+
+    .mostrar, .menu {
+        display:none;
+    }
+
+    .fechasEventos{
+        display: flex;
+    }
+
+    .lupulo{
+        width: 60%;
+    }
+
+    footer div a img{
+        width: 10%;
+        margin: 3%;
+        margin-top: 5%;
+    }
+
+    .footer div a img:hover{
+        width: 9%;
+    }
+
+    .estilostabla{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .anchotabla{
+        width: 100%;
+    }
+
+    h1, h2{
+        font-size: 2rem;
+    }
+
+    p,  .fechasEventos ul li, td, th {
+        font-size: 1rem;
+    }
+
+    .formulario, #filtrar{
+        width: 30%;
+    }
+    
+	.navegador{
+		list-style: none;
+		justify-content: left;
+	}
+
+	.menuopciones{
+		display: flex;
+		flex-direction: row;
+	}
+
+	.botonmenu{
+		margin-top: 20px;
+	}
+}
